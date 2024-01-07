@@ -8,6 +8,10 @@
 <body>
     
   <h1>Nombre {{$nombre}}</h1>
-
+  <h5 class="title">
+  @php
+   echo "Blade"; 
+  @endphp
+</h5>
 </body>
 </html>

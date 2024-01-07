@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,11 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('vista1',['nombre'=>'Esteban']);
-});
-
-
+  Route::get('/','App\Http\Controllers\InicioController@index');
+   
+  
 
  Route::get('/texto',function(){
     return "<h1>App Laravel 1</h1>";
