@@ -14,9 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-  Route::get('/','App\Http\Controllers\InicioController@index');
+ // Route::get('/','App\Http\Controllers\InicioController@index');
    
-  
+   Route::resource('/','App\Http\Controllers\PersonaController');
 
  Route::get('/texto',function(){
     return "<h1>App Laravel 1</h1>";
